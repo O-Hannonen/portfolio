@@ -41,7 +41,7 @@ const projects = [
     time: 'June 2022',
     title: 'Flutter — Portfolio',
     company: 'Personal project',
-    seeMoreUrl: 'https://github.com/O-Hannonen/O-Hannonen.github.io',
+    seeMoreUrl: 'https://github.com/O-Hannonen/portfolio.git',
     position: Position.left,
     text:
         '''I built this website with Flutter web to showcase my projects! It is the first website I've built with Flutter after the stable release of Flutter web. I've built couple CMS websites to mobile apps with the earlier versions of Flutter, but the performance of Flutter web kept dissappointing. I've gotta say, they've really upped their game since then. I'm very pleased with it now!''',
