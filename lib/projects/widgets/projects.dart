@@ -38,6 +38,26 @@ class Projects extends StatelessWidget {
 
 const projects = [
   ProjectDetails(
+    time: 'June 2022',
+    title: 'Flutter — Portfolio',
+    company: 'Personal project',
+    seeMoreUrl: 'https://github.com/O-Hannonen/portfolio.git',
+    position: Position.left,
+    text:
+        '''I built this website with Flutter web to showcase my projects! It is the first website I've built with Flutter after the stable release of Flutter web. I've built couple CMS websites to mobile apps with the earlier versions of Flutter, but the performance of Flutter web kept dissappointing. I've gotta say, they've really upped their game since then. I'm very pleased with it now!''',
+  ),
+  ProjectDetails(
+    time: 'March 2022',
+    title: 'Flutter — Template',
+    company: 'Personal project',
+    seeMoreUrl: 'https://github.com/O-Hannonen/template',
+    position: Position.right,
+    text:
+        '''The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains loads of boilerplate code, that can be reused from app to app. 
+    
+The template has lots of stuff preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services. Note: this app is still a work in progress (especially the documentation/"how to use" section).''',
+  ),
+  ProjectDetails(
     time: 'April 2020 - July 2021',
     title: 'Flutter — Mapventure',
     company: 'And Now For Something Completely Different Oy',
@@ -50,28 +70,6 @@ const projects = [
 The job was diverse and instructive. Mapventure was by its nature a perfect starter project for my career. At first none of us really knew what Mapventure is or could be. Therefore we developed and tested a ton of different versions of the app. That allowed me to learn and get my hands dirty with lots of different aspects of mobile development. During the project, I've worked with authentication, geolocation, maps, audio files, localizations, qr-codes, in app purchases + subscriptions, push notifications, dynamic links, phone sensors, analytics tools, databases and plenty of more!''',
   ),
   ProjectDetails(
-    time: 'June 2021',
-    title: 'Flutter — Statusbarz',
-    company: 'Open source contribution',
-    //image: mapventure,
-    seeMoreUrl: 'https://pub.dev/packages/statusbarz',
-    position: Position.right,
-    text: '''Statusbarz is my first open source contribution to the flutter community.
-        
-As most of the packages on pub.dev, Statusbarz was birthed to solve a problem in an app we were developing; We needed to change the phones statusbar color depending on the background image, so that the text on the statusbar is always visible. The problem was that the image came from the network, so we did not know if it was light or dark, and we did not want to use gradients on top of the image. So, we made a package that reads the pixels from statusbars background, calculates their average color and changes statusbar color based on it.''',
-  ),
-  ProjectDetails(
-    time: 'March 2022',
-    title: 'Flutter — Template',
-    company: 'Personal project',
-    seeMoreUrl: 'https://github.com/O-Hannonen/template',
-    position: Position.left,
-    text:
-        '''The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains loads of boilerplate code, that can be reused from app to app. 
-    
-The template has lots of services preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services. Note: this app is still a work in progress (especially the documentation/"how to use" section).''',
-  ),
-  ProjectDetails(
     time: 'December 2021',
     title: 'React — Tic-tac-toe',
     company: 'Personal project',
@@ -81,6 +79,17 @@ The template has lots of services preconfigured, such as authentication, localiz
     position: Position.right,
     text:
         '''Tic-tac-toe was the first react website I've built. The whole purpose of the website was to start getting familiar with react. The game works like a charm, even though the code may look ugly for anyone more experienced with react.''',
+  ),
+  ProjectDetails(
+    time: 'June 2021',
+    title: 'Flutter — Statusbarz',
+    company: 'Open source contribution',
+    //image: mapventure,
+    seeMoreUrl: 'https://pub.dev/packages/statusbarz',
+    position: Position.right,
+    text: '''Statusbarz is my first open source contribution to the flutter community.
+        
+As most of the packages on pub.dev, Statusbarz was birthed to solve a problem in an app we were developing; We needed to change the phones statusbar color depending on the background image, so that the text on the statusbar is always visible. The problem was that the image came from the network, so we did not know if it was light or dark, and we did not want to use gradients on top of the image. So, we made a package that reads the pixels from statusbars background, calculates their average color and changes statusbar color based on it.''',
   ),
   ProjectDetails(
     time: 'February 2021',
