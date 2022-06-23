@@ -12462,7 +12462,7 @@ this.c=c},
 zt:function zt(){},
 ajN(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e={}
 e.a=b
-if(a==null)a=B.eS
+if(a==null)a=B.eT
 s=J.ai(a)
 r=s.gm(a)-1
 q=A.bm(0,null,!1,t.LQ)
@@ -12606,7 +12606,7 @@ q.go9()
 p.so9(q.go9())
 q.glO()
 p.slO(q.glO())
-r.jj(0,B.eS,p)
+r.jj(0,B.eT,p)
 r.saF(0,b.gaF(b))
 r.sbq(0,b.gbq(b))
 r.dx=b.ga6X()
@@ -20813,10 +20813,10 @@ A.Rs.prototype={
 gSb(){var s=new A.fo(new A.te(window.document.querySelectorAll("meta"),t.xl),t.u8).i0(0,new A.Rt(),new A.Ru())
 return s==null?null:s.content},
 ta(a){var s
-if(A.k8(a,0,null).gHS())return A.P8(B.eT,a,B.G,!1)
+if(A.k8(a,0,null).gHS())return A.P8(B.eU,a,B.G,!1)
 s=this.gSb()
 if(s==null)s=""
-return A.P8(B.eT,s+("assets/"+a),B.G,!1)},
+return A.P8(B.eU,s+("assets/"+a),B.G,!1)},
 cJ(a,b){return this.a3P(0,b)},
 a3P(a,b){var s=0,r=A.T(t.V4),q,p=2,o,n=[],m=this,l,k,j,i,h,g,f,e
 var $async$cJ=A.U(function(c,d){if(c===1){o=d
@@ -49577,7 +49577,7 @@ r.Q=c.k1
 r.ry=c.k4
 r.to=c.ok
 r.x1=c.p1
-r.XI(b==null?B.eS:b)},
+r.XI(b==null?B.eT:b)},
 a6d(a,b){return this.jj(a,null,b)},
 KB(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=this,a6={}
 a6.a=a5.dy
@@ -50091,7 +50091,7 @@ A.ZV.prototype={
 cJ(a,b){return this.a3Q(0,b)},
 a3Q(a,b){var s=0,r=A.T(t.V4),q,p,o
 var $async$cJ=A.U(function(c,d){if(c===1)return A.Q(d,r)
-while(true)switch(s){case 0:p=B.bu.bV(A.axU(A.P8(B.eT,b,B.G,!1)).e)
+while(true)switch(s){case 0:p=B.bu.bV(A.axU(A.P8(B.eU,b,B.G,!1)).e)
 s=3
 return A.O(A.b($.fS.aB$,"_defaultBinaryMessenger").tu(0,"flutter/assets",A.f9(p.buffer,0,null)),$async$cJ)
 case 3:o=d
@@ -61819,10 +61819,10 @@ P(a,b){return new A.qG(new A.a_v(),null)}}
 A.a_v.prototype={
 $3(a,b,c){var s,r,q
 if(a){s=t.aS
-return A.mD(A.a0(new A.ad(B.eU,new A.a_q(),s),!0,s.i("aW.E")),B.aU,B.ax)}s=t.tv
+return A.mD(A.a0(new A.ad(B.eS,new A.a_q(),s),!0,s.i("aW.E")),B.aU,B.ax)}s=t.tv
 r=t.iC
 q=r.i("o.E")
-return A.a0O(A.a([A.mD(A.a0(new A.dv(new A.ax(B.eU,new A.a_r(),s),new A.a_s(),r),!0,q),B.aU,B.ax),A.mD(A.a0(new A.dv(new A.ax(B.eU,new A.a_t(),s),new A.a_u(),r),!0,q),B.aU,B.ax)],t.F),B.cb,B.fe)},
+return A.a0O(A.a([A.mD(A.a0(new A.dv(new A.ax(B.eS,new A.a_r(),s),new A.a_s(),r),!0,q),B.aU,B.ax),A.mD(A.a0(new A.dv(new A.ax(B.eS,new A.a_t(),s),new A.a_u(),r),!0,q),B.aU,B.ax)],t.F),B.cb,B.fe)},
 $C:"$3",
 $R:3,
 $S:410}
@@ -65665,6 +65665,16 @@ B.GO=new A.Hh(null)
 B.CL=A.a(s([B.uL,B.GO]),t.F)
 B.du=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.CM=A.a(s(["pointerdown","pointermove","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseup","keyup","keydown"]),t.s)
+B.dQ=new A.xn(0,"left")
+B.GM=new A.dI("Flutter \u2014 Portfolio","I built this website with Flutter web to showcase my projects! It is the first website I've built with Flutter after the stable release of Flutter web. I've built couple CMS websites to mobile apps with the earlier versions of Flutter, but the performance of Flutter web kept dissappointing. I've gotta say, they've really upped their game since then. I'm very pleased with it now!",null,"June 2022","Personal project","https://github.com/O-Hannonen/O-Hannonen.github.io",B.dQ,B.bG)
+B.cL=new A.xn(1,"right")
+B.GI=new A.dI("Flutter \u2014 Template",'The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains loads of boilerplate code, that can be reused from app to app. \n    \nThe template has lots of stuff preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services. Note: this app is still a work in progress (especially the documentation/"how to use" section).',null,"March 2022","Personal project","https://github.com/O-Hannonen/template",B.cL,B.bG)
+B.GK=new A.dI("Flutter \u2014 Mapventure","I developed and maintained the Mapventure app as part of a small team. At first I was the only programmer working on the app, but after six months the team grew and I got myself a programming pair. \n\nThe job was diverse and instructive. Mapventure was by its nature a perfect starter project for my career. At first none of us really knew what Mapventure is or could be. Therefore we developed and tested a ton of different versions of the app. That allowed me to learn and get my hands dirty with lots of different aspects of mobile development. During the project, I've worked with authentication, geolocation, maps, audio files, localizations, qr-codes, in app purchases + subscriptions, push notifications, dynamic links, phone sensors, analytics tools, databases and plenty of more!","assets/mapventure.png","April 2020 - July 2021","And Now For Something Completely Different Oy","https://www.mapventure.com",B.dQ,B.bG)
+B.GN=new A.dI("React \u2014 Tic-tac-toe","Tic-tac-toe was the first react website I've built. The whole purpose of the website was to start getting familiar with react. The game works like a charm, even though the code may look ugly for anyone more experienced with react.","assets/tic-tac-toe.png","December 2021","Personal project","https://github.com/O-Hannonen/tic-tac-toe",B.cL,B.eF)
+B.GJ=new A.dI("Flutter \u2014 Statusbarz","Statusbarz is my first open source contribution to the flutter community.\n        \nAs most of the packages on pub.dev, Statusbarz was birthed to solve a problem in an app we were developing; We needed to change the phones statusbar color depending on the background image, so that the text on the statusbar is always visible. The problem was that the image came from the network, so we did not know if it was light or dark, and we did not want to use gradients on top of the image. So, we made a package that reads the pixels from statusbars background, calculates their average color and changes statusbar color based on it.",null,"June 2021","Open source contribution","https://pub.dev/packages/statusbarz",B.cL,B.bG)
+B.GL=new A.dI("Flutter \u2014 The launcher","The launcher was my upper secondary schools final assignment. The app was an Android launcher, which was supposed to make everyday tasks faster and easier (but then I switched to IOS as my operating system of choice :D). \n    \nThe launcher really does have some nice features. The launcher can start all the apps installed on the phone, do some calculations, make phone calls straight from the home screen, control your smart home (lights, TV, etc.), see the current weather, see the local covid stats, see the school lunch menu and read the latest news.","assets/the-launcher.png","February 2021","ICT upper secondary school final assignment","https://github.com/O-Hannonen/thelauncher",B.cL,B.eF)
+B.GH=new A.dI("Flutter \u2014 Verbal clock","Verbal clock was my entry for the flutter clock competition hosted by google. \n    \nIt was one of my first Flutter projects ever (thats pretty obvious when looking at the code :D). It was a really fun way to learn by doing, and I even managed to make my crazy clock idea work. The clock actually looks surprisingly good and works really well!","assets/flutter_clock.png","January 2020","Competition entry","https://github.com/O-Hannonen/flutter_clock",B.dQ,B.bG)
+B.eS=A.a(s([B.GM,B.GI,B.GK,B.GN,B.GJ,B.GL,B.GH]),A.K("p<dI>"))
 B.m0=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
 B.xY=new A.j(1929379840)
 B.dO=new A.w(0,1)
@@ -65705,7 +65715,7 @@ B.m9=A.a(s([]),t.jl)
 B.m5=A.a(s([]),t.wi)
 B.Dv=A.a(s([]),A.K("p<ajm<@>>"))
 B.Ds=A.a(s([]),t.Vz)
-B.eS=A.a(s([]),t.J)
+B.eT=A.a(s([]),t.J)
 B.Q=A.a(s([]),t.oU)
 B.Dk=A.a(s([]),t.Lx)
 B.Dq=A.a(s([]),t.F)
@@ -65713,7 +65723,7 @@ B.Dr=A.a(s([]),t.n)
 B.m7=A.a(s([]),t.t)
 B.l=A.a(s([]),t.ee)
 B.Dx=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
-B.eT=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
+B.eU=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
 B.dv=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.ui=new A.od(0,"topLeft")
 B.ul=new A.od(3,"bottomRight")
@@ -65748,16 +65758,6 @@ B.tX=new A.iJ(5,"end")
 B.DE=A.a(s([B.k5,B.tV,B.tW,B.k6,B.b0,B.tX]),A.K("p<iJ>"))
 B.DG=A.a(s([!0,!1]),t.HZ)
 B.mb=A.a(s(["bind","if","ref","repeat","syntax"]),t.s)
-B.dQ=new A.xn(0,"left")
-B.GM=new A.dI("Flutter \u2014 Portfolio","I built this website with Flutter web to showcase my projects! It is the first website I've built with Flutter after the stable release of Flutter web. I've built couple CMS websites to mobile apps with the earlier versions of Flutter, but the performance of Flutter web kept dissappointing. I've gotta say, they've really upped their game since then. I'm very pleased with it now!",null,"June 2022","Personal project","https://github.com/O-Hannonen/portfolio.git",B.dQ,B.bG)
-B.cL=new A.xn(1,"right")
-B.GI=new A.dI("Flutter \u2014 Template",'The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains loads of boilerplate code, that can be reused from app to app. \n    \nThe template has lots of stuff preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services. Note: this app is still a work in progress (especially the documentation/"how to use" section).',null,"March 2022","Personal project","https://github.com/O-Hannonen/template",B.cL,B.bG)
-B.GK=new A.dI("Flutter \u2014 Mapventure","I developed and maintained the Mapventure app as part of a small team. At first I was the only programmer working on the app, but after six months the team grew and I got myself a programming pair. \n\nThe job was diverse and instructive. Mapventure was by its nature a perfect starter project for my career. At first none of us really knew what Mapventure is or could be. Therefore we developed and tested a ton of different versions of the app. That allowed me to learn and get my hands dirty with lots of different aspects of mobile development. During the project, I've worked with authentication, geolocation, maps, audio files, localizations, qr-codes, in app purchases + subscriptions, push notifications, dynamic links, phone sensors, analytics tools, databases and plenty of more!","assets/mapventure.png","April 2020 - July 2021","And Now For Something Completely Different Oy","https://www.mapventure.com",B.dQ,B.bG)
-B.GN=new A.dI("React \u2014 Tic-tac-toe","Tic-tac-toe was the first react website I've built. The whole purpose of the website was to start getting familiar with react. The game works like a charm, even though the code may look ugly for anyone more experienced with react.","assets/tic-tac-toe.png","December 2021","Personal project","https://github.com/O-Hannonen/tic-tac-toe",B.cL,B.eF)
-B.GJ=new A.dI("Flutter \u2014 Statusbarz","Statusbarz is my first open source contribution to the flutter community.\n        \nAs most of the packages on pub.dev, Statusbarz was birthed to solve a problem in an app we were developing; We needed to change the phones statusbar color depending on the background image, so that the text on the statusbar is always visible. The problem was that the image came from the network, so we did not know if it was light or dark, and we did not want to use gradients on top of the image. So, we made a package that reads the pixels from statusbars background, calculates their average color and changes statusbar color based on it.",null,"June 2021","Open source contribution","https://pub.dev/packages/statusbarz",B.cL,B.bG)
-B.GL=new A.dI("Flutter \u2014 The launcher","The launcher was my upper secondary schools final assignment. The app was an Android launcher, which was supposed to make everyday tasks faster and easier (but then I switched to IOS as my operating system of choice :D). \n    \nThe launcher really does have some nice features. The launcher can start all the apps installed on the phone, do some calculations, make phone calls straight from the home screen, control your smart home (lights, TV, etc.), see the current weather, see the local covid stats, see the school lunch menu and read the latest news.","assets/the-launcher.png","February 2021","ICT upper secondary school final assignment","https://github.com/O-Hannonen/thelauncher",B.cL,B.eF)
-B.GH=new A.dI("Flutter \u2014 Verbal clock","Verbal clock was my entry for the flutter clock competition hosted by google. \n    \nIt was one of my first Flutter projects ever (thats pretty obvious when looking at the code :D). It was a really fun way to learn by doing, and I even managed to make my crazy clock idea work. The clock actually looks surprisingly good and works really well!","assets/flutter_clock.png","January 2020","Competition entry","https://github.com/O-Hannonen/flutter_clock",B.dQ,B.bG)
-B.eU=A.a(s([B.GM,B.GI,B.GK,B.GN,B.GJ,B.GL,B.GH]),A.K("p<dI>"))
 B.mc=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.eV=A.a(s(["A::href","AREA::href","BLOCKQUOTE::cite","BODY::background","COMMAND::icon","DEL::cite","FORM::action","IMG::src","INPUT::src","INS::cite","Q::cite","VIDEO::poster"]),t.s)
 B.DX=new A.jD("und",null)
