@@ -15,6 +15,8 @@ class FadeItem {
   /// The duration of how long to wait after the previouse item started to fade in.
   final Duration delay;
 
+  bool disposed = false;
+
   FadeItem({
     required this.controller,
     required this.delay,

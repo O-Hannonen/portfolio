@@ -6,3 +6,5 @@ const mapventure = 'assets/mapventure.png';
 const flutterClock = 'assets/flutter_clock.png';
 const ticTacToe = 'assets/tic-tac-toe.png';
 const theLauncher = 'assets/the-launcher.png';
+const wilmaten = 'assets/wilmaten.png';
+const neumorphism = 'assets/neumorphism.png';

@@ -59,7 +59,7 @@ class SingleProjectCard extends StatelessWidget {
         return SizedBox(
           width: mobile ? width : width / 2,
           child: FadeIn(
-            duration: const Duration(milliseconds: 500),
+            duration: const Duration(milliseconds: 1000),
             child: Container(
               padding: const EdgeInsets.all(15.0),
               margin: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),

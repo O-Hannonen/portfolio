@@ -14,9 +14,12 @@ class OrderedFadeInCubit extends Cubit<OrderedFadeInState> {
     keys.sort();
 
     for (var key in keys) {
-      final item = state.fadeItems[key]!;
+      final item = state.fadeItems[key];
+      if (item == null) continue;
       await Future.delayed(item.delay);
-      item.controller.fadeIn();
+
+      /// The widget tree may be disposed during the delay.
+      if (!item.disposed) item.controller.fadeIn();
     }
   }
 
@@ -36,7 +39,9 @@ class OrderedFadeInCubit extends Cubit<OrderedFadeInState> {
   Future<void> close() {
     state.fadeItems.forEach((key, value) {
       value.controller.dispose();
+      value.disposed = true;
     });
+
     return super.close();
   }
 }
