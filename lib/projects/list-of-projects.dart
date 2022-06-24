@@ -137,8 +137,8 @@ It was my entry for a game development competition hosted by Visma. The game end
     title: 'Flutter — Dinera',
     company: 'Personal project',
     position: Position.left,
-    text: '''Dinera was the first flutter app I've ever built. It was a fully functioning social networking app for sharing recipies.
+    text: '''Dinera was the first flutter app I've ever built. It was a fully functioning social networking app for sharing recipes.
 
-The app allowed users to share their recipies, follow their friends and interact with their recipies. Dinera was the project I used to initially learn Flutter with. It was a long project, that I developed whenever I had some spare time. As I learned new stuff, I kept updating and improving the app. The app was developed to the point that it could have been published (altough it would have been buggy and the code was really messy).''',
+The app allowed users to share their recipes, follow their friends and interact with their recipes. Dinera was the project I used to initially learn Flutter with. It was a long project, that I developed whenever I had some spare time. As I learned new stuff, I kept updating and improving the app. The app was developed to the point that it could have been published (altough it would have been buggy and the code was really messy).''',
   ),
 ];
