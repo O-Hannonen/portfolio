@@ -60,11 +60,23 @@ class Banner extends StatelessWidget {
                   Align(
                     alignment: mobile ? Alignment.bottomCenter : Alignment.centerLeft,
                     child: Container(
-                      margin: EdgeInsets.symmetric(
+                      padding: EdgeInsets.symmetric(
                         horizontal: mobile ? 15.0 : 25.0,
-                        vertical: 100.0,
+                        vertical: 60.0,
                       ),
-                      width: mobile ? width - 30.0 : width * (4 / 7),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            context.colorScheme.background.withOpacity(0.0),
+                            context.colorScheme.background.withOpacity(0.6),
+                            context.colorScheme.background.withOpacity(0.0),
+                          ],
+                          stops: const [0.0, 0.75, 1.0],
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                        ),
+                      ),
+                      width: mobile ? width : width * (4 / 7),
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
                         child: Column(
