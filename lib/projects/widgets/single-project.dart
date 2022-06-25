@@ -61,8 +61,14 @@ class SingleProjectCard extends StatelessWidget {
           child: FadeIn(
             duration: const Duration(milliseconds: 1000),
             child: Container(
-              padding: const EdgeInsets.all(15.0),
-              margin: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),
+              padding: EdgeInsets.symmetric(
+                horizontal: mobile ? 10.0 : 15.0,
+                vertical: mobile ? 15.0 : 20.0,
+              ),
+              margin: EdgeInsets.symmetric(
+                horizontal: mobile ? 15.0 : 25.0,
+                vertical: mobile ? 10.0 : 15.0,
+              ),
               decoration: BoxDecoration(
                 color: context.colorScheme.surfaceVariant,
                 borderRadius: BorderRadius.circular(20.0),
@@ -97,7 +103,7 @@ class SingleProjectCard extends StatelessWidget {
                           Text(
                             details.time,
                             style: TextStyle(
-                              fontSize: 15.0,
+                              fontSize: mobile ? 10.0 : 15.0,
                               color: context.colorScheme.onSurfaceVariant,
                               fontStyle: FontStyle.italic,
                             ),
@@ -105,7 +111,7 @@ class SingleProjectCard extends StatelessWidget {
                           Text(
                             details.title,
                             style: TextStyle(
-                              fontSize: 30.0,
+                              fontSize: mobile ? 20.0 : 30.0,
                               color: context.colorScheme.onSurfaceVariant,
                               fontWeight: FontWeight.bold,
                             ),
@@ -114,7 +120,7 @@ class SingleProjectCard extends StatelessWidget {
                             Text(
                               details.company!,
                               style: TextStyle(
-                                fontSize: 13.0,
+                                fontSize: mobile ? 10.0 : 13.0,
                                 color: context.colorScheme.onSurfaceVariant,
                                 fontStyle: FontStyle.italic,
                                 fontWeight: FontWeight.bold,
@@ -124,7 +130,7 @@ class SingleProjectCard extends StatelessWidget {
                           Text(
                             details.text,
                             style: TextStyle(
-                              fontSize: 20.0,
+                              fontSize: mobile ? 15.0 : 20.0,
                               color: context.colorScheme.onSurfaceVariant,
                             ),
                           ),

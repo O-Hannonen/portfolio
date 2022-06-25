@@ -52,11 +52,16 @@ class SocialsIcon extends StatelessWidget {
             ),
           ],
         ),
-        child: WebsafeSvg.asset(
-          svg,
-          width: 60,
-          height: 60,
-          color: context.colorScheme.inversePrimary,
+        child: ColorFiltered(
+          colorFilter: ColorFilter.mode(
+            context.colorScheme.inversePrimary,
+            BlendMode.srcATop,
+          ),
+          child: WebsafeSvg.asset(
+            svg,
+            width: 80,
+            height: 80,
+          ),
         ),
       ),
     );

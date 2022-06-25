@@ -60,11 +60,11 @@ class Banner extends StatelessWidget {
                   Align(
                     alignment: mobile ? Alignment.bottomCenter : Alignment.centerLeft,
                     child: Container(
-                      margin: const EdgeInsets.symmetric(
-                        horizontal: 25.0,
+                      margin: EdgeInsets.symmetric(
+                        horizontal: mobile ? 15.0 : 25.0,
                         vertical: 100.0,
                       ),
-                      width: mobile ? width * 0.8 : width * (4 / 7),
+                      width: mobile ? width - 30.0 : width * (4 / 7),
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
                         child: Column(
@@ -175,7 +175,7 @@ class Banner extends StatelessWidget {
                             'My work',
                             style: GoogleFonts.secularOne(
                               textStyle: TextStyle(
-                                fontSize: mobile ? 25.0 : 40.0,
+                                fontSize: mobile ? 15.0 : 40.0,
                                 fontWeight: FontWeight.bold,
                                 color: context.colorScheme.primary.withOpacity(0.75),
                                 //shadows: shadows,
@@ -184,7 +184,7 @@ class Banner extends StatelessWidget {
                           ),
                           Icon(
                             Icons.keyboard_arrow_down,
-                            size: 50,
+                            size: mobile ? 25 : 50,
                             color: context.colorScheme.primary.withOpacity(0.75),
                             //shadows: shadows,
                           )
