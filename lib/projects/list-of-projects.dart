@@ -1,8 +1,16 @@
 import 'package:portfolio/assets.dart';
-
 import 'widgets/single-project.dart';
 
 const projects = [
+  ProjectDetails(
+    time: 'October 2022',
+    title: 'Dart — flconf',
+    company: 'Personal project',
+    seeMoreUrl: 'https://pub.dev/packages/flconf',
+    position: Position.left,
+    text:
+        '''I built a command line tool for easily running and building Flutter applications from a custom config set. The tool allows users to generate multiple config files, that can be used to eg. separate development and production builds. The best part of the tool is, that it is possible to read the configurations not only inside the Flutter code, but also on the native android/ios side of the project. The tool handles generating the necessary boilerplate code for all the platforms mentioned previously, so the user just needs to write the configurations into a .json file and run a single cli command.''',
+  ),
   ProjectDetails(
     time: 'June 2022',
     title: 'Flutter — Portfolio',
@@ -19,9 +27,9 @@ const projects = [
     seeMoreUrl: 'https://github.com/O-Hannonen/template',
     position: Position.right,
     text:
-        '''The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains loads of boilerplate code, that can be reused from app to app. 
+        '''The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains a ton of boilerplate code, that can be reused from app to app. 
     
-The template has lots of stuff preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services. Note: this app is still a work in progress (especially the documentation/"how to use" section).''',
+The template has lots of stuff preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services.''',
   ),
   ProjectDetails(
     time: 'April 2020 - July 2021',
@@ -44,7 +52,7 @@ The job was diverse and instructive. Mapventure was by its nature a perfect star
     seeMoreUrl: 'https://github.com/O-Hannonen/tic-tac-toe',
     position: Position.right,
     text:
-        '''Tic-tac-toe was the first react website I've built. The whole purpose of the website was to start getting familiar with react. The game works like a charm, even though the code may look ugly for anyone more experienced with react.''',
+        '''Tic-tac-toe was the first react website I've built. The whole purpose of the website was to start getting familiar with react.''',
   ),
   ProjectDetails(
     time: 'June 2021',
@@ -90,7 +98,7 @@ It was a dead simple HTML + CSS website to showcase neumorphic design pattern.''
     position: Position.left,
     text: '''Verbal clock was my entry for the flutter clock competition hosted by google.
 
-It was one of my first Flutter projects ever (thats pretty obvious when looking at the code :D). It was a really fun way to learn by doing, and I even managed to make my crazy clock idea work. The clock actually looks surprisingly good and works really well!''',
+It was one of my first Flutter projects ever. It was a really fun way to learn by doing, and I even managed to make my crazy clock idea work. The clock actually looks surprisingly good and works really well!''',
   ),
   ProjectDetails(
     time: 'October 2019',
@@ -136,9 +144,9 @@ It was my entry for a game development competition hosted by Visma. The game end
     time: 'December 2018 - April 2020',
     title: 'Flutter — Dinera',
     company: 'Personal project',
-    position: Position.left,
+    position: Position.right,
     text: '''Dinera was the first flutter app I've ever built. It was a fully functioning social networking app for sharing recipes.
 
-The app allowed users to share their recipes, follow their friends and interact with their recipes. Dinera was the project I used to initially learn Flutter with. It was a long project, that I developed whenever I had some spare time. As I learned new stuff, I kept updating and improving the app. The app was developed to the point that it could have been published (altough it would have been buggy and the code was really messy).''',
+The app allowed users to share their recipes, follow their friends and interact with their recipes. Dinera was the project I used to initially learn Flutter with. It was a long project, that I developed whenever I had some spare time. As I learned new stuff, I kept updating and improving the app. The app was developed to the point that it could have been published.''',
   ),
 ];

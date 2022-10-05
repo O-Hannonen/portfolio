@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_fadein/flutter_fadein.dart';
 import 'package:portfolio/reusable/snackbar.dart';
 import 'package:portfolio/theme.dart';
 import 'package:url_launcher/url_launcher.dart';
