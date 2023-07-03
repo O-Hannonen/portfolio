@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -37,5 +38,5 @@ jobs:
           destination-repository-name: O-Hannonen.github.io
           commit-message: "bot: updates portfolio website"
           user-email: bot@mankeli.co
-          target-branch: main
+          target-branch: master
           target-directory: ./
