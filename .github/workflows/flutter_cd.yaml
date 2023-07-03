@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: flutter build web --release
 
-      - name: Push codes to mason repo
+      - name: Push codes to github.io repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
           SSH_DEPLOY_KEY: "${{secrets.DEPLOY_SSH_KEY}}"
@@ -39,4 +39,3 @@ jobs:
           commit-message: "bot: updates portfolio website"
           user-email: bot@mankeli.co
           target-branch: master
-          target-directory: ./
