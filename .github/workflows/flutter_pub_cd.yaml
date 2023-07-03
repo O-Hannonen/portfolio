@@ -1,0 +1,41 @@
+name: "[CD]"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: dart-lang/setup-dart@v1
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.10.5
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build
+        run: flutter build web --release
+
+      - name: Push codes to mason repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: "${{secrets.DEPLOY_SSH_KEY}}"
+        with:
+          source-directory: build/web/
+          destination-github-username: O-Hannonen
+          destination-repository-name: O-Hannonen.github.io
+          commit-message: "bot: updates portfolio website"
+          user-email: bot@mankeli.co
+          target-branch: main
+          target-directory: ./

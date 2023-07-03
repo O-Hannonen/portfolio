@@ -75,17 +75,25 @@ class SingleProjectCard extends StatelessWidget {
               ),
               child: LayoutBuilder(builder: (context, constraints) {
                 return Wrap(
-                  direction: details.imageLocation == ImageLocation.left ? Axis.horizontal : Axis.vertical,
+                  direction: details.imageLocation == ImageLocation.left
+                      ? Axis.horizontal
+                      : Axis.vertical,
                   runAlignment: WrapAlignment.start,
                   alignment: WrapAlignment.start,
                   children: [
                     if (details.image != null)
                       Container(
                         margin: EdgeInsets.only(
-                          right: details.imageLocation == ImageLocation.left ? 10.0 : 0.0,
-                          bottom: details.imageLocation == ImageLocation.top ? 10.0 : 0.0,
+                          right: details.imageLocation == ImageLocation.left
+                              ? 10.0
+                              : 0.0,
+                          bottom: details.imageLocation == ImageLocation.top
+                              ? 10.0
+                              : 0.0,
                         ),
-                        width: details.imageLocation == ImageLocation.left ? constraints.maxWidth * (2 / 5) - 10.0 : constraints.maxWidth,
+                        width: details.imageLocation == ImageLocation.left
+                            ? constraints.maxWidth * (2 / 5) - 10.0
+                            : constraints.maxWidth,
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
@@ -95,7 +103,9 @@ class SingleProjectCard extends StatelessWidget {
                         ),
                       ),
                     SizedBox(
-                      width: details.imageLocation == ImageLocation.left ? constraints.maxWidth * (3 / 5) : constraints.maxWidth,
+                      width: details.imageLocation == ImageLocation.left
+                          ? constraints.maxWidth * (3 / 5)
+                          : constraints.maxWidth,
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -143,11 +153,19 @@ class SingleProjectCard extends StatelessWidget {
                                     try {
                                       /// Launches website on new blank tab
 
-                                      await launchUrl(Uri.parse(details.seeMoreUrl!), webOnlyWindowName: '_blank');
+                                      await launchUrl(
+                                          Uri.parse(details.seeMoreUrl!),
+                                          webOnlyWindowName: '_blank');
                                     } catch (e) {
                                       /// If launching fails, copy the link to clipboard
-                                      await Clipboard.setData(ClipboardData(text: details.seeMoreUrl));
-                                      showSnackbar(title: 'Great!', text: 'Link copied to clipboard.');
+                                      await Clipboard.setData(
+                                        ClipboardData(
+                                          text: details.seeMoreUrl!,
+                                        ),
+                                      );
+                                      showSnackbar(
+                                          title: 'Great!',
+                                          text: 'Link copied to clipboard.');
                                     }
                                   },
                                   child: const Text(

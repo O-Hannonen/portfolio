@@ -3,33 +3,67 @@ import 'widgets/single-project.dart';
 
 const projects = [
   ProjectDetails(
-    time: 'October 2022',
-    title: 'Dart — flconf',
-    company: 'Personal project',
-    seeMoreUrl: 'https://pub.dev/packages/flconf',
+    time: 'May 2023',
+    title: 'Dart — dart_define',
+    company: 'Open source contribution',
+    seeMoreUrl: 'https://pub.dev/packages/dart_define',
     position: Position.left,
     text:
-        '''I built a command line tool for easily running and building Flutter applications from a custom config set. The tool allows users to generate multiple config files, that can be used to eg. separate development and production builds. The best part of the tool is, that it is possible to read the configurations not only inside the Flutter code, but also on the native android/ios side of the project. The tool handles generating the necessary boilerplate code for all the platforms mentioned previously, so the user just needs to write the configurations into a .json file and run a single cli command.''',
+        '''A Dart package to easily handle secrets and flavors within the Dart ecosystem. This tool is designed to work exceptionally well with large teams of developers and CI/CD pipelines.''',
   ),
   ProjectDetails(
-    time: 'June 2022',
-    title: 'Flutter — Portfolio',
-    company: 'Personal project',
-    seeMoreUrl: 'https://github.com/O-Hannonen/portfolio.git',
+    time: 'April 2023',
+    title: 'Dart — mankeli_core',
+    company: 'Open source contribution',
+    seeMoreUrl: 'https://pub.dev/packages/mankeli_core',
+    position: Position.right,
+    text:
+        '''A Dart utility package which contains loads of useful functions, classes and extensions used from project to project.''',
+  ),
+  ProjectDetails(
+    time: 'February 2023',
+    title: 'Flutter — qr_plus',
+    company: 'Open source contribution',
+    seeMoreUrl: 'https://pub.dev/packages/qr_plus',
     position: Position.left,
     text:
-        '''I built this website with Flutter web to showcase my projects! It is the first website I've built with Flutter after the stable release of Flutter web. I've built couple CMS websites to mobile apps with the earlier versions of Flutter, but the performance of Flutter web kept dissappointing. I've gotta say, they've really upped their game since then. I'm very pleased with it now!''',
+        '''A Flutter package to read and render QR codes. Aims to make QR codes more sequre, by adding encryption and much more!''',
+  ),
+  ProjectDetails(
+    time: 'February 2023',
+    title: 'Dart — cmd_plus',
+    company: 'Open source contribution',
+    seeMoreUrl: 'https://pub.dev/packages/cmd_plus',
+    position: Position.right,
+    text:
+        '''A Dart package to easily run shell commands, copy and modify files in bulk and much more!''',
+  ),
+  ProjectDetails(
+    time: 'December 2022',
+    title: 'Dart — mankeli_analysis',
+    company: 'Open source contribution',
+    seeMoreUrl: 'https://pub.dev/packages/mankeli_analysis',
+    position: Position.left,
+    text:
+        '''A Dart package which contains all of the linting rules used internally at Mankeli Solutions.''',
   ),
   ProjectDetails(
     time: 'March 2022',
     title: 'Flutter — Template',
     company: 'Personal project',
-    seeMoreUrl: 'https://github.com/O-Hannonen/template',
     position: Position.right,
     text:
         '''The template is my first "boilerplate" project. It was made to speed up the process of creating new flutter apps. It contains a ton of boilerplate code, that can be reused from app to app. 
     
 The template has lots of stuff preconfigured, such as authentication, localizations, permission handling, linting, haptics, routing, logging, and dynamic theming. It also contains boilerplate code for many of the firebase services.''',
+  ),
+  ProjectDetails(
+    time: 'June 2021',
+    title: 'Flutter — Portfolio',
+    company: 'Personal project',
+    seeMoreUrl: 'https://github.com/O-Hannonen/portfolio.git',
+    position: Position.left,
+    text: '''This website, built with Flutter Web.''',
   ),
   ProjectDetails(
     time: 'April 2020 - July 2021',
@@ -61,7 +95,8 @@ The job was diverse and instructive. Mapventure was by its nature a perfect star
     //image: mapventure,
     seeMoreUrl: 'https://pub.dev/packages/statusbarz',
     position: Position.right,
-    text: '''Statusbarz is my first open source contribution to the flutter community.
+    text:
+        '''Statusbarz is my first open source contribution to the flutter community.
 
 As most of the packages on pub.dev, Statusbarz was birthed to solve a problem in an app we were developing; We needed to change the phones statusbar color depending on the background image, so that the text on the statusbar is always visible. The problem was that the image came from the network, so we did not know if it was light or dark, and we did not want to use gradients on top of the image. So, we made a package that reads the pixels from statusbars background, calculates their average color and changes statusbar color based on it.''',
   ),
@@ -85,7 +120,8 @@ The launcher really does have some nice features. The launcher can start all the
     image: neumorphism,
     seeMoreUrl: 'https://github.com/O-Hannonen/neumorphism.git',
     position: Position.left,
-    text: '''Neumorphism was my web development courses final assignment at Kerttuli ICT upper secondary school.
+    text:
+        '''Neumorphism was my web development courses final assignment at Kerttuli ICT upper secondary school.
 
 It was a dead simple HTML + CSS website to showcase neumorphic design pattern.''',
   ),
@@ -96,7 +132,8 @@ It was a dead simple HTML + CSS website to showcase neumorphic design pattern.''
     image: flutterClock,
     seeMoreUrl: 'https://github.com/O-Hannonen/flutter_clock',
     position: Position.left,
-    text: '''Verbal clock was my entry for the flutter clock competition hosted by google.
+    text:
+        '''Verbal clock was my entry for the flutter clock competition hosted by google.
 
 It was one of my first Flutter projects ever. It was a really fun way to learn by doing, and I even managed to make my crazy clock idea work. The clock actually looks surprisingly good and works really well!''',
   ),
@@ -114,7 +151,8 @@ The game itself was built with Unity, and the buttons that controlled the game w
     title: 'Python — Automations',
     company: 'Verstas Helsinki Oy',
     position: Position.right,
-    text: '''I built and programmed automations for an "escape room" that was on display at Ruisrock 2019.
+    text:
+        '''I built and programmed automations for an "escape room" that was on display at Ruisrock 2019.
 
 The room was part of a launch of Sisus new product. The automations were about controlling lights, playing audios and opening doors based the data of different sensors. The code was written in python, and it was running on raspberry PIs which were hooked to all of the other electronics.''',
   ),
@@ -124,7 +162,8 @@ The room was part of a launch of Sisus new product. The automations were about c
     company: 'Hackathon',
     seeMoreUrl: 'https://energiaviisaat.fi/energyhackathon/',
     position: Position.left,
-    text: '''I took part in an energy themed hackathon with couple of my friends.
+    text:
+        '''I took part in an energy themed hackathon with couple of my friends.
 
 During the couple days, we made a demo of a Sims -like 3D game. The idea behind the game was to teach players about energy efficient and sustainable living. We ended up getting a honorary award and bunch of free laptops for our efforts.''',
   ),
@@ -144,8 +183,9 @@ It was my entry for a game development competition hosted by Visma. The game end
     time: 'December 2018 - April 2020',
     title: 'Flutter — Dinera',
     company: 'Personal project',
-    position: Position.right,
-    text: '''Dinera was the first flutter app I've ever built. It was a fully functioning social networking app for sharing recipes.
+    position: Position.left,
+    text:
+        '''Dinera was the first flutter app I've ever built. It was a fully functioning social networking app for sharing recipes.
 
 The app allowed users to share their recipes, follow their friends and interact with their recipes. Dinera was the project I used to initially learn Flutter with. It was a long project, that I developed whenever I had some spare time. As I learned new stuff, I kept updating and improving the app. The app was developed to the point that it could have been published.''',
   ),
