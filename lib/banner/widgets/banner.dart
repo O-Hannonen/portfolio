@@ -58,7 +58,8 @@ class Banner extends StatelessWidget {
                     ),
                   ),
                   Align(
-                    alignment: mobile ? Alignment.bottomCenter : Alignment.centerLeft,
+                    alignment:
+                        mobile ? Alignment.bottomCenter : Alignment.centerLeft,
                     child: Container(
                       padding: EdgeInsets.symmetric(
                         horizontal: mobile ? 15.0 : 25.0,
@@ -109,9 +110,10 @@ class Banner extends StatelessWidget {
                               child: RichText(
                                 text: TextSpan(
                                   children: [
-                                    const TextSpan(text: "I'm an enthusiastic   "),
+                                    const TextSpan(
+                                        text: "I'm an enthusiastic   "),
                                     TextSpan(
-                                      text: "mobile developer",
+                                      text: "software developer",
                                       style: GoogleFonts.satisfy(
                                         textStyle: TextStyle(
                                           fontSize: 60.0,
@@ -121,7 +123,7 @@ class Banner extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    const TextSpan(text: "   from Finland"),
+                                    const TextSpan(text: "   from Turku"),
                                   ],
                                   style: TextStyle(
                                     fontSize: 40.0,
@@ -140,7 +142,8 @@ class Banner extends StatelessWidget {
                                   fadeInOrder: 3,
                                   cubit: fadeRegionCubit,
                                   delay: const Duration(milliseconds: 500),
-                                  fadeInDuration: const Duration(milliseconds: 150),
+                                  fadeInDuration:
+                                      const Duration(milliseconds: 150),
                                   child: const SocialsIcon(
                                     svg: github,
                                     url: 'https://github.com/O-Hannonen',
@@ -150,17 +153,20 @@ class Banner extends StatelessWidget {
                                   fadeInOrder: 4,
                                   cubit: fadeRegionCubit,
                                   delay: const Duration(milliseconds: 100),
-                                  fadeInDuration: const Duration(milliseconds: 150),
+                                  fadeInDuration:
+                                      const Duration(milliseconds: 150),
                                   child: const SocialsIcon(
                                     svg: linkedin,
-                                    url: 'https://www.linkedin.com/in/onnimanni-hannonen-0370a7179/',
+                                    url:
+                                        'https://www.linkedin.com/in/onnimanni-hannonen-0370a7179/',
                                   ),
                                 ),
                                 OrderedFadeInItem(
                                   fadeInOrder: 5,
                                   cubit: fadeRegionCubit,
                                   delay: const Duration(milliseconds: 100),
-                                  fadeInDuration: const Duration(milliseconds: 150),
+                                  fadeInDuration:
+                                      const Duration(milliseconds: 150),
                                   child: const SocialsIcon(
                                     svg: email,
                                     url: 'onnari11@gmail.com',
@@ -189,7 +195,8 @@ class Banner extends StatelessWidget {
                               textStyle: TextStyle(
                                 fontSize: mobile ? 15.0 : 40.0,
                                 fontWeight: FontWeight.bold,
-                                color: context.colorScheme.primary.withOpacity(0.75),
+                                color: context.colorScheme.primary
+                                    .withOpacity(0.75),
                                 //shadows: shadows,
                               ),
                             ),
@@ -197,7 +204,8 @@ class Banner extends StatelessWidget {
                           Icon(
                             Icons.keyboard_arrow_down,
                             size: mobile ? 25 : 50,
-                            color: context.colorScheme.primary.withOpacity(0.75),
+                            color:
+                                context.colorScheme.primary.withOpacity(0.75),
                             //shadows: shadows,
                           )
                         ],
